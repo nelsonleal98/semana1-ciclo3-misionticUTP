@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de zapatos</title>
+    <link rel="icon" href="images/zapato.png" type="image/png" />
 </head>
 <body>
-    Hola mundo
+    <style>
+
+        table, tr, th{
+            border: 1px solid black;
+        }
+
+        .titulo{
+            color: cyan;
+            text-align: center;
+        }
+        .cita{
+            font-style: italic;
+        }
+
+        h2{
+            color: red;
+        }
+
+        .tituloSeccionCalzado{
+            color: #337848;
+        }
+
+    </style>
+    <header>
+        <h1 class="titulo">Tienda de zapatos</h1>        
+    </header>
+
+    <main>
+        <p>El por qué de las zapatillas</p>
+        <blockquote cite="https://es.wikipedia.org/wiki/Zapatilla" class="cita">
+            La palabra zapatilla puede referirse al calzado cómodo o de abrigo para estar en casa
+        </blockquote>
+        <p class="parrafo-principal">Lorem <a href="https://www.eltiempo.com/" target="_blank" class="clase-principal__link--eltiempo">ipsum</a> dolor sit amet consectetur adipisicing elit. 
+            Minus animi reprehenderit molestias reiciendis rerum incidunt inventore a voluptas, 
+            suscipit sunt blanditiis repellendus cumque ullam exercitationem placeat itaque aliquid non rem.
+        </p>
+        <!--Comentario-->
+        <h2 class="tituloSeccionCalzado">Sección de calzado</h2>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Exercitationem recusandae consequatur sequi velit alias! Deserunt harum voluptas, maiores dolor, 
+            iure ipsa assumenda a similique quaerat accusantium, corporis aperiam ad cumque.
+        </p>
+
+        <h2>Menu principal</h2>
+
+        <ul>
+            <li>Video</li>
+            <li><a href="#Contacto">Contacto</a></li>
+            <li><a href="#Fundador">Fundador</a></li>
+            <li><a href="#Formulario">Formulario</a></li>
+        </ul>
+
+        <br>
+        
+        <br>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Wm-p9mcN8Yk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2 id="Contacto">Contacto</h2>
+
+        <table>
+            <tr>
+                <th> Areas de la tienda </th>
+                <th> Responsable </th>
+                <th> Telefono </th>
+            </tr>
+            <tr>
+                <th> Calzado de hombre </th>
+                <th> Nelson Leal </th>
+                <th> 3214017207 </th>
+            </tr>
+            <tr>
+                <th> Calzado de mujer </th>
+                <th> Daniela </th>
+                <th> 3001220230 </th>
+            </tr>
+        </table>
+
+        <img src="images/avataaars.png" alt="propietaria nombre 1" width="400" height="400" id="Fundador">
+        
+        <h3 id="Formulario">Formulario</h3>
+
+        <form>
+            <label for="nombreCompleto">Nombre Completo</label>
+            <input type="text" id="nombreC" name="nombreC" placeholder="Ingrese su nombre y apellido" required>
+        </form>
+
+    </main>
 </body>
 </html>
